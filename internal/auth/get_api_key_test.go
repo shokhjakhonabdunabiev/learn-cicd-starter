@@ -32,7 +32,7 @@ func TestGetAPIKey(t *testing.T) {
 			headers: http.Header{
 				"Authorization": []string{"ApiKey"},
 			},
-			expectError:   false,
+			expectError:   true,
 			errorContains: "malformed authorization header",
 		},
 		{
